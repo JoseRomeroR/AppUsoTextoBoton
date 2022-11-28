@@ -7,17 +7,18 @@ package appusotextoboton;
 import Componentes.CampoTextoBoton;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 
 /**
  *
  * @author Kyle7
  */
 public class FXMLDocumentController implements Initializable {
-    
+
     private Label label;
     @FXML
     private CampoTextoBoton CampoArriba;
@@ -26,28 +27,20 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Label LabelTexto;
 
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-        
-        CampoArriba.setText("Grabar");
-       
-         
-        
-        
-    }    
 
+        CampoArriba.setOnAction((ActionEvent event) -> {
 
+            LabelTexto.setText("Has grabado : " + CampoArriba.getText());
 
-    @FXML
-    private void GrabarArriba(MouseEvent event) {
-           LabelTexto.setText("Se ha grabado " + CampoArriba.getText());
+        });
+        CampoAbajo.setOnAction((ActionEvent event) -> {
+
+            LabelTexto.setText("Has grabado : " + CampoAbajo.getText());
+
+        });
+
     }
 
-    @FXML
-    private void GrabarAbajo(MouseEvent event) {
-             LabelTexto.setText("Se ha grabado " + CampoAbajo.getText());
-    }
-    
 }
