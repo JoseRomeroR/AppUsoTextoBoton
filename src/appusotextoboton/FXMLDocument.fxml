@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import Componentes.CampoTextoBoton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="appusotextoboton.FXMLDocumentController">
+   <children>
+      <Label fx:id="LabelTexto" layoutX="84.0" layoutY="151.0" prefHeight="15.0" prefWidth="153.0" text="Pulsa boton y..." AnchorPane.bottomAnchor="31.400000000000006" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="82.4" AnchorPane.topAnchor="151.0" />
+      <CampoTextoBoton fx:id="CampoArriba" layoutX="55.0" layoutY="38.0" onMouseClicked="#GrabarArriba" AnchorPane.bottomAnchor="136.4" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.80000000000001" AnchorPane.topAnchor="38.0" />
+      <CampoTextoBoton fx:id="CampoAbajo" layoutX="55.0" layoutY="100.0" onMouseClicked="#GrabarAbajo" AnchorPane.bottomAnchor="74.4" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.80000000000001" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>
