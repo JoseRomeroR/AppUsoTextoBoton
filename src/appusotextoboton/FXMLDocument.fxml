@@ -4,9 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="appusotextoboton.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appusotextoboton.FXMLDocumentController">
    <children>
-      <Label fx:id="LabelTexto" layoutX="84.0" layoutY="151.0" prefHeight="15.0" prefWidth="153.0" text="Pulsa boton y..." AnchorPane.bottomAnchor="31.400000000000006" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="82.4" AnchorPane.topAnchor="151.0" />
+      <Label fx:id="LabelTexto" layoutX="84.0" layoutY="151.0" prefHeight="156.0" prefWidth="419.0" text="Pulsa boton y muestra texto en esta etiqueta" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="151.0" />
       <CampoTextoBoton fx:id="CampoArriba" layoutX="55.0" layoutY="38.0" AnchorPane.bottomAnchor="136.4" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.80000000000001" AnchorPane.topAnchor="38.0" />
       <CampoTextoBoton fx:id="CampoAbajo" layoutX="55.0" layoutY="100.0" AnchorPane.bottomAnchor="74.4" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="53.80000000000001" AnchorPane.topAnchor="100.0" />
    </children>
